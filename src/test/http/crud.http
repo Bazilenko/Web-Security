@@ -1,0 +1,36 @@
+### GET ALL RESTAURANTS
+GET http://localhost:8080/api/v1/restaurants
+
+###
+
+### GET ONE RESTAURANT
+GET http://localhost:8080/api/v1/restaurants/2
+
+###
+
+### DELETE ONE RESTAURANT
+DELETE http://localhost:8080/api/v1/restaurants/3
+
+###
+
+### CREATE ONE RESTAURANT
+POST http://localhost:8080/api/v1/restaurants
+Content-Type: application/json
+
+{
+  "name": "name4",
+  "description": "d4"
+}
+### UPDATE ONE RESTAURANT
+PUT http://localhost:8080/api/v1/restaurants
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "name22",
+  "description": "d22"
+}
+
+
+###
+
