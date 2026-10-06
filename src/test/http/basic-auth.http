@@ -3,6 +3,35 @@ GET http://localhost:8080/api/v1/restaurants
 Authorization: Basic admin admin
 Accept: application/json
 
+### CREATE ONE RESTAURANT Happy path
+POST http://localhost:8080/api/v1/restaurants
+Authorization: Basic admin admin
+Content-Type: application/json
+
+{
+  "name": "Chobonta",
+  "description": "Pizza restaurant"
+}
+
+### GET ONE RESTAURANT Happy path
+GET http://localhost:8080/api/v1/restaurants/2
+Authorization: Basic admin admin
+Accept: application/json
+
+### UPDATE ONE RESTAURANT Happy path
+PUT http://localhost:8080/api/v1/restaurants
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "Chebonta",
+  "description": "Sushi restaurant"
+}
+
+### DELETE ONE RESTAURANT Happy path
+DELETE http://localhost:8080/api/v1/restaurants/3
+Authorization: Basic admin admin
+
 ### GET ALL RESTAURANTS Bad credentials
 GET http://localhost:8080/api/v1/restaurants
 Authorization: Basic admin1 admin11
