@@ -1,0 +1,66 @@
+### GET ALL RESTAURANTS Happy path
+GET http://localhost:8080/api/v1/restaurants
+Authorization: Basic admin admin
+Accept: application/json
+
+### GET ALL RESTAURANTS Bad credentials
+GET http://localhost:8080/api/v1/restaurants
+Authorization: Basic admin1 admin11
+Accept: application/json
+
+### GET ONE RESTAURANT
+GET http://localhost:8080/api/v1/restaurants/2
+Authorization: Basic admin admin
+Accept: application/json
+
+### GET ONE RESTAURANT Bad Credentials
+GET http://localhost:8080/api/v1/restaurants/2
+Authorization: Basic admin admin
+Accept: application/json
+
+### DELETE ONE RESTAURANT
+DELETE http://localhost:8080/api/v1/restaurants/3
+Authorization: Basic admin admin
+
+### CREATE ONE RESTAURANT
+POST http://localhost:8080/api/v1/restaurants
+Authorization: Basic admin admin
+Content-Type: application/json
+
+{
+  "name": "name4",
+  "description": "d4"
+}
+### UPDATE ONE RESTAURANT
+PUT http://localhost:8080/api/v1/restaurants
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "name22",
+  "description": "d22"
+}
+
+### GET ONE RESTAURANT(id 3) Happy path
+GET http://localhost:8080/api/v1/restaurants/3
+Authorization: Basic admin admin
+Accept: application/json
+
+### GET ONE RESTAURANT(id 3) Bad credentials
+GET http://localhost:8080/api/v1/restaurants/3
+Authorization: Basic admin2 admin3
+Accept: application/json
+
+### CREATE ONE RESTAURANT Bad Credentials
+POST http://localhost:8080/api/v1/restaurants
+Authorization: Basic admin4 admin3
+Content-Type: application/json
+
+{
+  "name": "name4",
+  "description": "d4"
+}
+
+
+
+
