@@ -1,0 +1,64 @@
+### HELLO ADMIN
+GET http://localhost:8080/api/v1/restaurants/hello/admin
+Authorization: Basic admin admin
+Accept: application/json
+
+### HELLO SUPERADMIN
+GET http://localhost:8080/api/v1/restaurants/hello/superadmin
+Authorization: Basic superadmin superadmin
+Accept: application/json
+
+### HELLO USER
+GET http://localhost:8080/api/v1/restaurants/hello/user
+Authorization: Basic user user
+Accept: application/json
+
+### HELLO MAN as user
+GET http://localhost:8080/api/v1/restaurants/hello/man
+Authorization: Basic user user
+Accept: application/json
+
+
+### HELLO MAN as admin
+GET http://localhost:8080/api/v1/restaurants/hello/man
+Authorization: Basic admin admin
+Accept: application/json
+
+
+### HELLO UNKNOWN as admin
+GET http://localhost:8080/api/v1/restaurants/hello/unknown
+Authorization: Basic admin admin
+Accept: application/json
+
+
+### HELLO UNKNOWN as user
+GET http://localhost:8080/api/v1/restaurants/hello/unknown
+Authorization: Basic user user
+Accept: application/json
+
+
+### HELLO ADMIN as user
+GET http://localhost:8080/api/v1/restaurants/hello/admin
+Authorization: Basic user user
+Accept: application/json
+
+
+### HELLO USER as admin
+GET http://localhost:8080/api/v1/restaurants/hello/user
+Authorization: Basic admin admin
+Accept: application/json
+
+### HELLO SUPERADMIN as admin
+GET http://localhost:8080/api/v1/restaurants/hello/superadmin
+Authorization: Basic admin admin
+Accept: application/json
+
+
+
+
+
+
+
+
+
+
